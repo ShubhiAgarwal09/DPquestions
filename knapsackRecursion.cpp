@@ -1,4 +1,6 @@
 #include <bits/stdc++.h> 
+#include<vector>
+using namespace std;
 
 int solve(vector<int>& weight, vector<int>& value, int index, int capacity){
 	//base case
