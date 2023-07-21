@@ -1,0 +1,21 @@
+#include <bits/stdc++.h> 
+#include<vector>
+using namespace std;
+
+int solve(int n ){
+	    if(n==0){
+	        return 0;
+	    }
+	    int ans = 0;
+	    for(int i = 1;i*i<=n;i++){
+	        ans = min(ans,1+solve(n-i*i));
+	    }
+	    return ans;
+	}
+	
+	
+	int MinSquares(int n)
+	{
+	    // Code here
+	    return solve(n);
+	}
